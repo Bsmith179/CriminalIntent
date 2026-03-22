@@ -21,11 +21,12 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val fragment = CrimeDetailFragment()
+        /*val fragment = CrimeDetailFragment()
         supportFragmentManager
             .beginTransaction()
             .add(R.id.fragment_container, fragment)
             .commit()
+        */
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.fragment_container)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
